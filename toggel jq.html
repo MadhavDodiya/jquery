@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <title>toggel jquery</title>
+    <script>
+        $(document).ready(function () {
+            $(".div").click(function () {
+                $(".box1").slideToggle("slow");
+            });
+
+            $(".div1").click(function () {
+                $(".box2").slideToggle("slow");
+            });
+
+            $(".div2").click(function () {
+                $(".box3").slideToggle("slow");
+            });
+
+            $(".div3").click(function () {
+                $(".box4").slideToggle("slow");
+            });
+
+            $(".div4").click(function () {
+                $(".box5").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <style>
+        .div{padding: 5px 10px;background: green;width: 50%;color: white;font-size: 20px;}
+        .div1{padding: 5px 10px;background: red;width: 50%;color: white;font-size: 20px;}
+        .div2{padding: 5px 10px;background: blueviolet;width: 50%;color: white;font-size: 20px;}
+        .div3{padding: 5px 10px;background: purple;width: 50%;color: white;font-size: 20px;}
+        .div4{padding: 5px 10px;background: peru;width: 50%;color: white;font-size: 20px;}
+
+        .box1{padding: 5px 10px;background: gray;width: 50%;display: none;}
+        .box2{padding: 5px 10px;background: gray;width: 50%;display: none;}
+        .box3{padding: 5px 10px;background: gray;width: 50%;display: none;}
+        .box4{padding: 5px 10px;background: gray;width: 50%;display: none;}
+        .box5{padding: 5px 10px;background: gray;width: 50%;display: none;}
+    </style>
+</head>
+
+<body>
+    <div class="div">Html & Html5</div>
+    <div class="box1">
+        <h1>html tag</h1>
+        <h1>html form</h1>
+        <h1>html media</h1>
+    </div>
+
+    <div class="div1">css & css3</div>
+    <div class="box2">
+        <h1>CSS Introduction</h1>
+        <h1>CSS Selectors</h1>
+        <h1>Box Model</h1>
+        <h1>Styling Navigation Menu        </h1>
+        <h1>Using Custom "Web" Fonts        </h1>
+        <h1>Responsive Web Design        </h1>
+        <h1>CSS Transform        </h1>
+        <h1>CSS Transitions        </h1>
+        <h1>CSS Animations        </h1>
+    </div>
+
+    <div class="div2">Bootstrap</div>
+    <div class="box3">
+        <h1>Introduction        </h1>
+        <h1>Layout</h1>
+        <h1>Content</h1>
+        <h1>UI Component        </h1>
+        <h1>PSD To HTML Using Bootstrap        </h1>
+    </div>
+
+    <div class="div3">Samantic ui</div>
+    <div class="box4">
+        <h1>Introduction</h1>
+        <h1>UI Elements        </h1>
+        <h1>UI Collection        </h1>
+        <h1>UI Model        </h1>
+    </div>
+
+    <div class="div4">Photoshop</div>
+    <div class="box5">
+        <h1>Template Design        </h1>
+    </div>
+</body>
+
+</html>
