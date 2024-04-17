@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+        $("#add").click(function(){
+          <!-- $("ol").append("<li>meta ai coming</li>"); -->
+          $("ol").prepend("<li>meta ai coming</li>");
+        
+    
+      });
+
+
+      $("#bf").click(function(){
+     
+        $("h1").before("html");
+      
+  
+    });
+
+    $("#af").click(function(){
+        $("h1").after("css");
+      
+      
+  
+    });
+    });
+
+
+</script>
+</head>
+<body>
+    
+<ol>
+    <li>chatgpt</li>
+    <li>devin ai</li>
+  
+</ol>
+
+
+<button id="add">add data</button>
+
+<h1>BOOTSTRAP</h1>
+<button id="bf">before</button>
+<button id="af">after</button>
+</body>
+</html>

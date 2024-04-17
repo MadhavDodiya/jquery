@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .clr {
+            color: red;
+        }
+
+        .clp {
+            color: purple;
+        }
+
+        .fs50 {
+            font-size: 50px;
+        }
+
+        .ff {
+            font-family: cursive;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#red").click(function () {
+                <!-- $("h1,p").css("color","red"); -->
+                $("h1,p").css({ "color": "red", "background": "yellow", "font-size": "50px" });
+
+            });
+
+            $("#blue").click(function () {
+                $("h1,p").css("color", "blue");
+
+            });
+
+            $("#green").click(function () {
+                $("h1,p").css("color", "green");
+
+            });
+
+
+
+
+
+            $("#th").click(function () {
+                $("#data").html("<u>thank u for clicking</u>");
+                $("#data1").text("<u>thank u for clicking</u>");
+
+            });
+
+
+            $("#clr").click(function () {
+            < !--$("h2").addClass("clr fs50 ff"); -->
+                    $("h2").toggleClass("clr fs50 ff");
+
+
+            });
+
+            $("#remove").click(function () {
+                $("h1").removeClass("clp");
+
+
+
+            });
+
+
+            $("#clean").click(function () {
+            < !--$("#box").empty(); -->
+                    $("#box").remove();
+
+
+
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <h1 class="clp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum vel quod aut in aspernatur
+        assumenda? Nemo vero exercitationem voluptatem, facilis reiciendis in unde minima eveniet deleniti quia, quasi
+        ut!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat repellendus minima ratione inventore porro
+        fugit enim, quis numquam suscipit laborum tempora doloribus delectus deserunt illo perferendis incidunt
+        dignissimos et explicabo!</p>
+    <button id="red">red</button>
+    <button id="green">green</button>
+    <button id="blue">blue</button>
+
+    <button id="th">submit</button>
+    <h1 id="data"></h1>
+    <h1 id="data1"></h1>
+
+    <h2>keval</h2>
+    <h2>keval</h2>
+    <h2>keval</h2>
+    <h2>keval</h2>
+    <h2>keval</h2>
+    <h2>keval</h2>
+    <h2>keval</h2>
+
+
+    <button>purple</button>
+    <button id="clr">red</button>
+
+    <button id="remove">remove</button>
+
+    <div id="box" style="height: 500px;width:500px;background:lightblue">
+        <ol>
+            <li>car</li>
+            <li>car</li>
+            <li>car</li>
+            <li>car</li>
+            <li>car</li>
+            <li>car</li>
+            <li>car</li>
+        </ol>
+
+    </div>
+
+    <button id="clean">clean</button>
+
+</body>
+
+</html>
