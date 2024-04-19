@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Todo List</title>
+  <style>
+    /* Add some basic styling for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #todoList {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #todoList li {
+      margin-bottom: 5px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+  <div>
+      <h1>Todo List</h1>
+      <ul id="todoList">
+      
+      </ul>
+      <input type="text" id="newTodo" placeholder="Add a new todo">
+      <button id="addTodo">Add Todo</button>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      // Wait for the document to be ready
+
+      // Event handler for adding a new todo
+      $("#addTodo").click(function () {
+        // Get the value from the input field
+        var newTodoText = $("#newTodo").val();
+
+        // Check if the input is not empty
+        if (newTodoText !== "") {
+          // Create a new list item and append it to the todo list
+          $("#todoList").append("<li>" + newTodoText + "</li>");
+
+          // Clear the input field
+          $("#newTodo").val("");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
